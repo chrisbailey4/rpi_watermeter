@@ -1,0 +1,15 @@
+[Unit]
+Description=Check WaterSensor Readinsg
+After=multi-user.target
+Requires=network.target
+
+[Service]
+Type=idle
+User=pi
+WorkingDirectory=/home/pi/dev/rpi_watermeter
+ExecStart= /home/pi/dev/rpi_watermeter/.env/bin/python main.py
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

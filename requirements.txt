@@ -1,0 +1,4 @@
+argparse==1.4.0
+adafruit-circuitpython-mlx90393==2.0.1
+influxdb-client==1.13.0
+
