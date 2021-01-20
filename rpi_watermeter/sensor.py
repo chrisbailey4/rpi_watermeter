@@ -28,6 +28,6 @@ class WaterMeterSensor():
         self.sensor.display_status()
 
     def get_reading(self):
-        mx, my, mz = self.sensor.magnetic
+        mx, my, mz = self.sensor.read_data
 
         return mx, my, mz
